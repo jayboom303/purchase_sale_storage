@@ -1,0 +1,26 @@
+<!-- sidebar-nav -->
+<div class="sidebar-nav">
+	<a href="#manage-tool-menu" class="nav-header" data-toggle="collapse"><i class="icon-paste"></i>工具管理<i class="icon-chevron-up"></i></a>
+	<ul id="manage-tool-menu" class="nav nav-list collapse in">
+		<li ><a href={% url 'tool-borrow' %}><i class="icon-barcode"></i>工具借出</a></li>
+		<li ><a href={% url 'tool-return' %}><i class="icon-list-ul"></i>工具归还</a></li>
+		<li ><a href={% url 'manager-tool-data-query' %}><i class="icon-search"></i>工具信息查询</a></li>
+		<li ><a href={% url 'manager-tool-data-upload' %}><i class="icon-upload-alt"></i>上传工具数据</a></li>
+		<!-- <li ><a href={% url 'manager' %}><i class="icon-download-alt"></i>导出工具数据</a></li> -->
+	</ul>
+	<a href="#manage-employee-menu" class="nav-header" data-toggle="collapse"><i class="icon-group"></i>员工管理<i class="icon-chevron-up"></i></a>
+	<ul id="manage-employee-menu" class="nav nav-list collapse in">
+		<li ><a href={% url 'manager-employee-add' %}><i class="icon-plus-sign"></i>添加员工信息</a></li>
+		<li ><a href={% url 'manager-employee-query' %}><i class="icon-search"></i>员工信息查询</a></li>
+	</ul>
+	<a href="#manage-permission-menu" class="nav-header" data-toggle="collapse"><i class="icon-sitemap"></i>用户权限管理<i class="icon-chevron-up"></i></a>
+	<ul id="manage-permission-menu" class="nav nav-list collapse in">
+		<!-- <li ><a href={% url 'upcoming' %}><i class="icon-cog"></i>权限设置</a></li> -->
+		<li ><a href={% url 'manager-user-jurisdiction-query' %}><i class="icon-search"></i>用户权限查询</a></li>
+	</ul>
+	<a href="#accounts-menu" class="nav-header" data-toggle="collapse"><i class="icon-bar-chart"></i>数据统计与分析<i class="icon-chevron-up"></i></a>
+	<ul id="accounts-menu" class="nav nav-list collapse in">
+		<li ><a href={% url 'tool-br-data-statistics' %}><i class="icon-align-left"></i>数据统计</a></li>
+		<li ><a href={% url 'tool-br-data-analysis' %}><i class="icon-signal"></i>数据分析</a></li>
+	</ul>
+</div>
